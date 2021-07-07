@@ -1,0 +1,955 @@
+body {
+	margin: 0;
+}
+.main {
+	margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg,#af002d 50.8%, #ff7a18 50%);
+}
+/*img {
+	height: 554px;
+}*/
+.element {
+    position: absolute;
+    top: 8%;
+    right: 0%;
+    bottom: 0%;
+    left: 0%;
+    transform: translate(0%, 0%);
+    text-decoration: none;
+    color: white;
+    font-family: verdana;
+    transition: 0.5s;
+    background: linear-gradient(
+45deg
+, #eea949, #ff3984) center/0% 100% no-repeat;
+    animation-name: animate;
+    animation-duration: 1.5s; 
+  animation-timing-function: ease-out; 
+  animation-delay: 0;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+
+@keyframes animate {
+    0% {
+        background-size: 10% 100%;
+    }
+    50% {
+        background-size: 50% 100%;
+    }
+    100% {
+        background-size: 100% 100%;
+    }
+}
+
+.pic-art {
+    z-index: 1;
+}
+img {
+    height: 627px;
+}
+.face-art {
+    clip: rect(0em,0em,32em,-20em);
+    position: absolute;
+    top: 115px;
+    left: 50.9%;
+}
+/*.face-art {
+	position: absolute;
+    top: 0;
+}*/
+.face-line {
+    clip-path: polygon(1% 5%, 8% 44%, 22% 58%, 34% 68%, 47% 75%, 57% 80%, 35% 61%, 27% 52%, 21% 43%, 11% 27%);
+    position: absolute;
+    left: -3.7em;
+    top: 16.3em;
+    height: 6em;
+    width: 3em;
+    background: #c17149;
+    z-index: 5;
+    transform: rotate(
+336deg
+);
+}
+.chin-1 {
+    position: absolute;
+    top: 17.8em;
+    left: -2em;
+    height: 3.4em;
+    width: 3.4em;
+    background: #efa570;
+    z-index: 1;
+    clip-path: circle(50% at 50% 50%);
+}
+.chin-2 {
+    position: absolute;
+    top: 17.8em;
+    left: -0.9em;
+    height: 3.4em;
+    width: 3.4em;
+    background: #efa570;
+    z-index: 1;
+    clip-path: circle(50% at 50% 50%);
+}
+.face {
+    width: 10.4em;
+    height: 13.2em;
+    background-color: #eda466;
+    position: absolute;
+    top: 7.8em;
+    left: -4.9em;
+    border-radius: 165% 308% 200% 235%;
+    z-index: 2;
+}
+.face-line-shade {
+    clip-path: polygon(100% 8%, 70% 19%, 58% 38%, 47% 48%, 27% 56%, 19% 58%, 14% 64%, 6% 71%, 35% 69%, 45% 60%, 71% 43%, 78% 25%);
+    height: 4em;
+    width: 2em;
+    background-color: #db9559;
+    position: absolute;
+    top: 0em;
+    left: 0.5em;
+    z-index: 5;
+}
+.face-line-shade-1 {
+    z-index: 5;
+    height: 5em;
+    width: 2em;
+    background-color: #e59755;
+    position: absolute;
+    top: 2.7em;
+    left: -0.08em;
+    clip-path: polygon(1% 44%, 7% 28%, 29% 0%, 47% 1%, 33% 31%, 33% 43%, 34% 56%, 28% 53%, 20% 64%, 19% 76%, 16% 87%, 12% 94%, 1% 100%);
+    transform: rotate( 
+6deg
+ );
+}
+.fore-head {
+    position: absolute;
+    top: 0em;
+    left: 0em;
+    background: #fbbf87;
+    height: 5em;
+    width: 9em;
+}
+.lower-cheek-area {
+    position: absolute;
+    top: 8em;
+    left: 1.6em;
+    width: 7.7em;
+    height: 5.2em;
+    background: #fbbf87;
+    clip-path: polygon(29% 1%, 65% -2%, 89% 33%, 90% 58%, 71% 95%, 30% 98%, 10% 65%, 7% 48%);
+    filter: blur(0.5em);
+}
+.mouth {
+    clip-path: polygon(-24% -5%, 3% 28%, 43% 24%, 79% 22%, 91% 14%, 76% 37%, 68% 46%, 52% 53%, 45% 55%, 24% 50%, 9% 38%);
+    position: absolute;
+    top: 8.6em;
+    left: 2.6em;
+    background: black;
+    height: 5em;
+    width: 6.2em;
+    transform: rotate(
+358deg
+);
+    z-index: 5;
+}
+.neck {
+    width: 10em;
+    height: 11.2em;
+    background-color: #dc7c35cf;
+    position: absolute;
+    top: 20em;
+    left: -3.6em;
+    z-index: 0;
+}
+.skin-shade {
+    clip-path: polygon(15% 14%, 23% 30%, 40% 40%, 63% 37%, 83% 23%, 87% 15%, 88% 28%, 90% 38%, 84% 50%, 69% 62%, 51% 68%, 33% 66%, 14% 56%, 8% 48%, 5% 37%);
+    position: absolute;
+    height: 14em;
+    width: 11em;
+    background: #e3955b;
+    top: 19em;
+    left: -4em;
+    z-index: 4;
+}
+.chest {
+    width: 10em;
+    height: 7.6em;
+    background-color: #fbbf87;
+    position: absolute;
+    top: 25em;
+    left: -3.6em;
+    z-index: 4;
+}
+.left-eyebrow {
+    width: 2.6em;
+    height: 0.6em;
+    background-color: #21140e;
+    position: absolute;
+    left: 1.3em;
+    top: 4.2em;
+    border-radius: 100% 55% 50% 30%;
+    transform: rotate(
+8deg
+);
+    z-index: 5;
+}
+.left-eyebrow::before {
+    width: 1.5em;
+    height: 0.3em;
+    background-color: #22160f;
+    position: absolute;
+    left: -0.9em;
+    top: 0.5em;
+    border-radius: 100% 55% 50% 30%;
+    transform: rotate( 
+322deg
+ );
+    content: '';
+}
+.left-eyebrow::after {
+    content: '';
+    position: absolute;
+    background: #e29b66;
+    height: 0.6em;
+    width: 2.5em;
+    left: -1.9em;
+    top: 1.4em;
+    border-radius: 0% 8% 60% 0%;
+    transform: rotate(
+324deg
+);
+}
+.right-eyebrow {
+    width: 2em;
+    height: 0.58em;
+    background-color: #21140e;
+    position: absolute;
+    left: 5.6em;
+    top: 3.7em;
+    border-radius: 30% 60% 21% 30%;
+    transform: rotate( 
+337deg
+ );
+    z-index: 5;
+}
+.right-eyebrow::before {
+    width: 1.5em;
+    height: 0.5em;
+    background-color: #22160f;
+    position: absolute;
+    left: 1.3em;
+    top: 0.3em;
+    border-radius: 100% 55% 50% 30%;
+    transform: rotate( 
+36deg
+ );
+    content: '';
+}
+.left-eye-shades {
+    width: 4em;
+    height: 1.8em;
+    transform: translate3d(4em, 2em, 0) rotate( 
+350deg
+ );
+    border-radius: 0% 36% 35% 78%;
+    background: linear-gradient(to right, #f9cea7, #e3aa81, #f3ab71, #e78f66);
+    box-shadow: -1em 1em 4em -2em rgb(247 194 137);
+    top: 2.7em;
+    left: -3.9em;
+    position: absolute;
+    filter: blur(0.04em);
+    z-index: 4;
+}
+.right-eye-shades {
+    width: 4em;
+    height: 1.8em;
+    transform: translate3d(4em, 2em, 0) rotate( 
+165deg
+ );
+    border-radius: 0% 36% 35% 78%;
+    background: linear-gradient(to right, #f9cea7, #e3aa81, #f3ab71, #e78f66);
+    box-shadow: -1em 1em 4em -2em rgb(247 194 137);
+    top: 1.7em;
+    right: 4.99em;
+    position: absolute;
+    filter: blur(0.04em);
+    z-index: 4;
+}
+.left-eye .upper-liner {
+    clip-path: polygon(12% 104%, 28% 35%, 60% 27%, 98% 56%, 90% 59%, 81% 64%, 71% 51%, 36% 33%, 76% 39%, 41% 51%);
+    position: absolute;
+    top: 4.8em;
+    left: 1.3em;
+    width: 2.8em;
+    height: 1em;
+    background: #000;
+    transform: rotate( 
+7deg
+ );
+    z-index: 4;
+}
+.left-eye .lower-liner {
+    clip-path: polygon(-40% 70%, 21% 25%, 48% 17%, 81% 35%, 89% 41%, 109% 79%, 98% 87%, 67% 46%, 39% 38%, 46% 37%);
+    position: absolute;
+    top: 6.2em;
+    left: 1.3em;
+    width: 2.5em;
+    height: 0.6em;
+    background: #000;
+    transform: rotate( 
+171deg
+ );
+    z-index: 4;
+}
+
+.upper-liner {
+    clip-path: polygon(5% 99%, 38% 29%, 55% 23%, 74% 33%, 88% 50%, 101% 68%, 69% 85%, 76% 44%, 62% 42%, 46% 37%);
+    position: absolute;
+    top: 4.4em;
+    right: 1.9em;
+    width: 2.8em;
+    height: 1em;
+    background: #000;
+    transform: rotate( 
+357deg
+ );
+    z-index: 4;
+}
+.lower-liner {
+    clip-path: polygon(-40% 70%, 21% 25%, 48% 17%, 81% 35%, 89% 41%, 109% 79%, 98% 87%, 67% 46%, 39% 38%, 46% 37%);
+    position: absolute;
+    top: 5.5em;
+    right: 1.8em;
+    width: 2.5em;
+    height: 0.6em;
+    background: #000;
+    transform: rotate( 
+165deg
+ );
+    z-index: 4;
+}
+.left-cheek {
+    top: 2.3em;
+    position: absolute;
+    left: 0.6em;
+    height: 6.9em;
+    width: 3.8em;
+    background: #fbbf87;
+    z-index: 3;
+    border-radius: 32% 31% 160% 171%;
+    transform: rotate( 
+29deg
+ );
+    filter: blur(0.1em);
+}
+.right-cheek {
+    top: 2em;
+    position: absolute;
+    right: 1em;
+    height: 6.9em;
+    width: 4.2em;
+    background: #fbbf87;
+    z-index: 3;
+    border-radius: 25% 21% 64% 114%;
+    transform: rotate( 
+318deg
+ );
+    filter: blur(0.1em);
+}
+.nose {
+    position: absolute;
+    top: 4.5em;
+    left: 4.1em;
+    background: #fbbf87;
+    height: 3.7em;
+    width: 1.6em;
+    z-index: 1;
+}
+.nose-shade-1 {
+    clip-path: polygon(39% 1%, 51% 36%, 50% 76%, 43% 89%, 32% 86%, 36% 56%, 37% 36%, 38% 22%, 34% 10%);
+    position: absolute;
+    left: 3.3em;
+    top: 5em;
+    height: 2em;
+    width: 2em;
+    background: linear-gradient( to right , #dc845b, #fbc084);
+    z-index: 3;
+    transform: rotate(
+358deg
+);
+}
+    .nose-shade-2 {
+    position: absolute;
+    left: 3.3em;
+    top: 6.5em;
+    height: 2.5em;
+    width: 2em;
+    background: linear-gradient( to left , #eba16f, #ea9f6e);
+    z-index: 5;
+    clip-path: polygon(34% 8%, 29% 24%, 21% 49%, 9% 67%, 9% 77%, 21% 85%, 24% 86%, 24% 87%, 48% 84%, 51% 61%, 53% 56%, 42% 48%, 41% 37%, 46% 19%, 48% 9%, 50% 3%);
+    transform: rotate( 
+360deg
+ );
+}
+.nose-shade-3 {
+    position: absolute;
+    top: 7.5em;
+    left: 3.6em;
+    background: #eaa06f;
+    height: 2.7em;
+    width: 2.7em;
+    z-index: 5;
+    clip-path: polygon(17% 37%, 33% 54%, 44% 58%, 60% 56%, 75% 48%, 80% 45%, 77% 47%, 89% 34%, 90% 32%, 92% 19%, 48% 15%, 25% 5%);
+    transform: rotate( 
+358deg
+ );
+}
+.nose-shade-4 {
+    position: absolute;
+    top: 6.5em;
+    left: 5.5em;
+    height: 4em;
+    width: 1.1em;
+    background: #fbbf87;
+    transform: rotate(
+339deg
+);
+}
+.glands {
+    overflow: hidden;
+    position: absolute;
+    top: 4.9em;
+    left: 1.3em;
+    clip-path: polygon(8% 38%, 18% 26%, 30% 18%, 54% 20%, 76% 29%, 85% 37%, 96% 45%, 88% 46%, 67% 49%, 41% 50%, 22% 51%, 0% 52%);
+    width: 2.5em;
+    height: 2.5em;
+    background: black;
+    filter: blur(0.1px);
+    z-index: 5;
+}
+.right-eye .glands {
+    overflow: hidden;
+    position: absolute;
+    top: 3.8em;
+    right: 1.7em;
+    width: 2.5em;
+    clip-path: polygon(0% 50%, 26% 34%, 39% 29%, 62% 29%, 106% 55%, 93% 47%, 42% 54%, 25% 57%, 20% 58%, -2% 58%, -2% 50%);
+    height: 3.3em;
+    background: black;
+    filter: blur(0.1px);
+    left: unset;
+    z-index: 5;
+}
+.eye-outer-layer {
+    overflow: hidden;
+    position: absolute;
+    top: 5em;
+    left: 1.5em;
+    clip-path: polygon(8% 38%, 18% 26%, 30% 18%, 54% 20%, 76% 29%, 85% 37%, 96% 45%, 88% 46%, 67% 49%, 41% 50%, 22% 51%, 0% 52%);
+    width: 2.1em;
+    height: 2.1em;
+    background: #fff;
+    filter: blur(0.1px);
+    z-index: 5;
+}
+.right-eye .eye-outer-layer {
+    overflow: hidden;
+    position: absolute;
+    top: 4.5em;
+    left: unset;
+    clip-path: polygon(8% 38%, 18% 26%, 30% 18%, 54% 20%, 76% 29%, 85% 37%, 96% 45%, 88% 46%, 67% 49%, 41% 50%, 22% 51%, 0% 52%);
+    width: 2em;
+    height: 2em;
+    background: #fff;
+    filter: blur(0.1px);
+    right: 2em;
+    transform: rotate(
+356deg
+);
+    z-index: 5;
+}
+.eyeball {
+    height: 1em;
+    width: 1em;
+    border-radius: 100%;
+    position: absolute;
+    left: 0.4em;
+    top: 0.25em;
+    background: radial-gradient(ellipse at center, #431c11 2%,#29130b 73%,#000000 100%);
+}
+.iris {
+    background: linear-gradient(to bottom, rgb(106 55 37) 0%,rgba(0,0,0,0) 50%,rgba(0,0,0,0) 99%);
+    height: 1em;
+    width: 1em;
+    border-radius: 100%;
+    transform: rotate( 
+-40deg
+ );
+}
+.iris1 {
+    background: linear-gradient(to bottom, rgb(0 0 0) 0%,rgba(0,0,0,0) 50%,rgba(0,0,0,0) 99%);
+    height: 1em;
+    width: 1em;
+    border-radius: 100%;
+    transform: rotate( 
+-60deg
+ );
+    box-shadow: 0 0 0.1em 0.02em inset;
+}
+.blackball {
+    background: #fff;
+    height: 0.16em;
+    width: 0.16em;
+    position: absolute;
+    top: 0.4em;
+    left: 0.4em;
+    border-radius: 50%;
+    z-index: 1;
+}
+.right-eye .blackball {
+    top: 0.5em;
+    left: 0.6em;
+}
+.hairs {
+    height: 20em;
+    position: absolute;
+    top: 4.2em;
+    left: -10em;
+    width: 20em;
+    z-index: 6;
+}
+.layer.layer-1 {
+    width: 8em;
+    height: 3em;
+    background: #170a18;
+    position: absolute;
+    left: 4.6em;
+    top: 0em;
+    border-radius: 100% 80% 0% 0%;
+}
+.layer.layer-1::before {
+    width: 5em;
+    height: 2em;
+    background: #170a18;
+    position: absolute;
+    left: 2.6em;
+    top: 1.8em;
+    border-radius: 0% 0% 0% 24%;
+    content: '';
+    transform: rotate(
+8deg
+);
+}
+.layer.layer-1::after {
+    width: 3em;
+    height: 2em;
+    background: #170a18;
+    position: absolute;
+    left: 1.9em;
+    top: 1.8em;
+    border-radius: 0% 0% 0% 24%;
+    content: '';
+    transform: rotate( 
+1deg
+ );
+}
+.layer.layer-2 {
+    width: 8em;
+    height: 3em;
+    background: #170a18;
+    position: absolute;
+    left: 9.4em;
+    top: 2em;
+    border-radius: 100% 100% 0% 0%;
+    transform: rotate(
+49deg
+);
+}
+.layer.layer-3 {
+    width: 8em;
+    height: 2.2em;
+    background: #170a18;
+    position: absolute;
+    left: 12.5em;
+    top: 8.8em;
+    border-radius: 0% 100% 0% 0%;
+    transform: rotate( 
+71deg
+ );
+}
+.layer.layer-4 {
+    width: 3em;
+    height: 2em;
+    background: #170a18;
+    position: absolute;
+    left: 3.5em;
+    top: 2em;
+    border-radius: 100% 100% 0% 0%;
+    transform: rotate( 
+269deg
+ );
+}
+.layer.layer-5 {
+    width: 6em;
+    height: 2em;
+    background: #170a18;
+    position: absolute;
+    left: 1.4em;
+    top: 4em;
+    border-radius: 100% 100% 0% 0%;
+    transform: rotate( 
+281deg
+ );
+}
+.layer.layer-5::before {
+    width: 5em;
+    height: 2em;
+    background: #170a18;
+    position: absolute;
+    left: -1.9em;
+    top: 0.3em;
+    border-radius: 0% 0% 10% 56%;
+    transform: rotate( 
+12deg
+ );
+    content: '';
+}
+.layer.layer-5::after {
+    width: 5em;
+    height: 2em;
+    background: #170a18;
+    position: absolute;
+    left: -3.8em;
+    top: 0.6em;
+    border-radius: 0% 0% 5% 70%;
+    transform: rotate( 
+345deg
+ );
+    content: '';
+}
+.layer.layer-6 {
+    width: 5em;
+    height: 2em;
+    background: #170a18;
+    position: absolute;
+    left: 1.1em;
+    top: 6em;
+    border-radius: 30% 0% 0% 0%;
+    transform: rotate( 
+290deg
+ );
+}
+.layer.layer-7 {
+    width: 3em;
+    height: 2em;
+    background: #170a18;
+    position: absolute;
+    left: 1.6em;
+    top: 9em;
+    border-radius: 27% 0% 0% 0%;
+    transform: rotate( 
+270deg
+ );
+}
+.layer.layer-8 {
+    width: 4em;
+    height: 2.8em;
+    background: #170a18;
+    position: absolute;
+    left: 1.6em;
+    top: 11em;
+    border-radius: 0% 0% 0% 0%;
+    transform: rotate( 
+270deg
+ );
+}
+.layer.layer-8::before {
+    width: 2em;
+    height: 5.8em;
+    background: #170a18;
+    position: absolute;
+    left: 2em;
+    top: -0.8em;
+    border-radius: 0% 35% 30% 0%;
+    transform: rotate( 
+91deg
+ );
+    content: '';
+}
+.layer.layer-8::after {
+    width: 2em;
+    height: 5.8em;
+    background: #170a18;
+    position: absolute;
+    left: -1em;
+    top: -0.1em;
+    border-radius: 0% 35% 30% 0%;
+    transform: rotate( 
+79deg
+ );
+    content: '';
+}
+.layer.layer-9 {
+    width: 3em;
+    height: 3.4em;
+    background: #170a18;
+    position: absolute;
+    left: 2em;
+    top: 13em;
+    border-radius: 40% 0% 0% 0%;
+    transform: rotate( 
+285deg
+ );
+}
+.layer.layer-9::before {
+    width: 3em;
+    height: 2.4em;
+    background: #170a18;
+    position: absolute;
+    left: -0.7em;
+    top: 3em;
+    border-radius: 0% 0% 0% 25%;
+    transform: rotate( 
+308deg
+ );
+    content: '';
+}
+.layer.layer-9::after {
+    width: 5em;
+    height: 2.4em;
+    background: #170a18;
+    position: absolute;
+    left: -3.6em;
+    top: 4.7em;
+    border-radius: 0% 0% 20% 35%;
+    transform: rotate( 
+327deg
+ );
+    content: '';
+}
+.layer.layer-10 {
+    width: 2em;
+    height: 5em;
+    background: #170a18;
+    position: absolute;
+    left: 3.3em;
+    top: 14em;
+    border-radius: 0% 0% 0% 0%;
+    transform: rotate( 
+276deg
+ );
+}
+.layer.layer-11 {
+    width: 3em;
+    height: 5em;
+    background: #170a18;
+    position: absolute;
+    left: 2.2em;
+    top: 15.9em;
+    border-radius: 45% 37% 0% 0%;
+    transform: rotate( 
+288deg
+ );
+}
+.layer.layer-12 {
+    width: 3em;
+    height: 11em;
+    background: #170a18;
+    position: absolute;
+    left: 15.4em;
+    top: 10.2em;
+    border-radius: 0% 48% 0% 0%;
+    transform: rotate( 
+357deg
+ );
+}
+.layer.layer-13 {
+    width: 5em;
+    height: 8em;
+    background: #170a18;
+    position: absolute;
+    left: 13.8em;
+    top: 13em;
+    border-radius: 88% 75% 0% 40%;
+    transform: rotate( 
+8deg
+ );
+}
+.layer.layer-14 {
+    width: 6em;
+    height: 8em;
+    background: #170a18;
+    position: absolute;
+    left: 14.2em;
+    top: 17em;
+    border-radius: 8% 0% 0% 74%;
+    transform: rotate( 
+343deg
+ );
+}
+.layer.layer-15 {
+    width: 6em;
+    height: 8em;
+    background: #170a18;
+    position: absolute;
+    left: 1.4em;
+    top: 17em;
+    border-radius: 19% 0% 0% 84%;
+    transform: rotate( 
+192deg
+ );
+}
+.layer.layer-16 {
+    width: 10em;
+    height: 7.7em;
+    background: #170a18;
+    position: absolute;
+    left: -5.5em;
+    top: 20em;
+    border-radius: 0% 128% 0% 70%;
+    transform: rotate( 
+106deg
+ );
+}
+.layer.layer-17 {
+    width: 10em;
+    height: 8.3em;
+    background: #170a18;
+    position: absolute;
+    left: -3.5em;
+    top: 21.1em;
+    border-radius: 33% 0% 0% 0%;
+    transform: rotate( 
+0deg
+ );
+}
+.layer.layer-18 {
+    width: 9em;
+    height: 7em;
+    background: #170a18;
+    position: absolute;
+    left: 15.9em;
+    top: 18.8em;
+    border-radius: 100% 0% 62% 0%;
+    transform: rotate( 
+94deg
+ );
+}
+.layer.layer-19 {
+    width: 8em;
+    height: 5em;
+    background: #170a18;
+    position: absolute;
+    left: 15.5em;
+    top: 22.1em;
+    border-radius: 0% 55% 0% 4%;
+    transform: rotate( 
+0deg
+ );
+}
+.layer.layer-20 {
+    width: 2em;
+    height: 10em;
+    background: #170a18;
+    position: absolute;
+    left: 13.5em;
+    top: 2.3em;
+    border-radius: 0% 0% 0% 60%;
+    transform: rotate(
+336deg
+);
+}
+.layer.layer-21 {
+    width: 2em;
+    height: 4em;
+    background: #170a18;
+    position: absolute;
+    left: 13.4em;
+    top: 5.8em;
+    border-radius: 0% 0% 0% 60%;
+    transform: rotate( 
+348deg
+ );
+}
+.layer.layer-22 {
+    width: 2em;
+    height: 3em;
+    background: #170a18;
+    position: absolute;
+    left: 14.7em;
+    top: 8.8em;
+    border-radius: 0% 0% 0% 50%;
+    transform: rotate( 
+348deg
+ );
+}
+.layer.layer-23 {
+    width: 2em;
+    height: 2em;
+    background: #170a18;
+    position: absolute;
+    left: 15em;
+    top: 13em;
+    border-radius: 0% 0% 0% 0%;
+    transform: rotate( 
+10deg
+ );
+}
+.layer.layer-24 {
+    width: 2em;
+    height: 6em;
+    background: #170a18;
+    position: absolute;
+    left: 12.9em;
+    top: 15em;
+    border-radius: 45% 0% 0% 30%;
+    transform: rotate( 
+15deg
+ );
+}
+.layer.layer-25 {
+    width: 6em;
+    height: 2em;
+    background: #170a18;
+    position: absolute;
+    left: 9.8em;
+    top: 4em;
+    border-radius: 0% 0% 0% 29%;
+    transform: rotate(
+50deg
+);
+}
+.layer.layer-25::before {
+    width: 2em;
+    height: 3em;
+    background: #170a18;
+    position: absolute;
+    left: 0.2em;
+    top: -0.2em;
+    border-radius: 0% 22% 52% 0%;
+    transform: rotate( 
+74deg
+ );
+    content: '';
+}
+.layer.layer-25::after {
+    width: 6em;
+    height: 2em;
+    background: #170a18;
+    position: absolute;
+    left: -5.2em;
+    top: 4em;
+    border-radius: 0% 43% 0% 0%;
+    transform: rotate( 
+73deg
+ );
+    content: '';
+}
