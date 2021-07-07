@@ -8,44 +8,6 @@ body {
     justify-content: center;
     background: linear-gradient(90deg,#af002d 50.8%, #ff7a18 50%);
 }
-/*img {
-	height: 554px;
-}*/
-.element {
-    position: absolute;
-    top: 8%;
-    right: 0%;
-    bottom: 0%;
-    left: 0%;
-    transform: translate(0%, 0%);
-    text-decoration: none;
-    color: white;
-    font-family: verdana;
-    transition: 0.5s;
-    background: linear-gradient(
-45deg
-, #eea949, #ff3984) center/0% 100% no-repeat;
-    animation-name: animate;
-    animation-duration: 1.5s; 
-  animation-timing-function: ease-out; 
-  animation-delay: 0;
-  animation-direction: alternate;
-  animation-iteration-count: infinite;
-  animation-fill-mode: none;
-  animation-play-state: running;
-}
-
-@keyframes animate {
-    0% {
-        background-size: 10% 100%;
-    }
-    50% {
-        background-size: 50% 100%;
-    }
-    100% {
-        background-size: 100% 100%;
-    }
-}
 
 .pic-art {
     z-index: 1;
