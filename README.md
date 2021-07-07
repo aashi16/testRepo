@@ -1,2 +1,2 @@
-# testRepo
-This is for testing purpose only.
+# selfPotrait
+Self potrait using only HTML & CSS 
